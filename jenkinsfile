@@ -2,19 +2,19 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-           
-                sh 'make build';
-            
+           setps{
+                sh 'make build'
+           }
         }
         stage('Test') {
-           
-                sh 'make test';
-            
+           setps{
+                sh 'make test'
+           }
         }
         stage('Deploy') {
-           
-                sh 'make deploy';
-            
+           setps{
+                sh 'make deploy'
+           }
         }
     }
 }

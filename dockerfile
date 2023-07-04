@@ -1,4 +1,6 @@
 FROM gcc
+
 COPY . /app
 WORKDIR /app
-CMD ["./", "main.c"]
+RUN make build
+CMD ["./testMAKE"]
